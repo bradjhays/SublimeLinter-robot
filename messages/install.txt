@@ -1,0 +1,22 @@
+SublimeLinter-robot
+-------------------------------
+This linter plugin for SublimeLinter provides an interface to rflint.
+
+See [README](https://github.com/SublimeLinter/SublimeLinter-robot) for configurations.
+
+Add robot to you SublimeLinter settings -> linters
+```
+{
+    "linters": {
+        "robotlint":{
+            "disable": false,
+            "executable": "<full_path>/rflint",
+            "lint_mode": "load_save",
+            "selector": "source.robot",
+            "ignore": ["LineTooLong"]
+        },
+        ...
+    }
+    ...
+}
+```
